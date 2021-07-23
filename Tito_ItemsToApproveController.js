@@ -78,6 +78,13 @@
         cmp.set("v.sortedDirection", sortDirection);
         helper.sortData(cmp, fieldName, sortDirection);
     },
+    updateColumnSorting2: function (cmp, event, helper) {
+        var fieldName = event.getParam('fieldName');
+        var sortDirection = event.getParam('sortDirection');
+        cmp.set("v.sortedBy", fieldName);
+        cmp.set("v.sortedDirection", sortDirection);
+        helper.sortData(cmp, fieldName, sortDirection);
+    },
     handleRowAction: function(cmp, event, helper){
         console.log('handleRowAction');
      var action = event.getParam('action');
