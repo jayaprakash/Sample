@@ -9,6 +9,7 @@ Controller to get the list of pending approvals for the current user
 -->
 <aura:component controller="Tito_ItemsToApproveController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 	 <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
 <!--Data-->
   <aura:attribute name="wrapperList" type="object[]"/>
